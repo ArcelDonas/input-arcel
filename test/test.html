@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test input arcel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3">
+        <form action="">
+          <div class="form-group">
+            <label for="input1">Type your text here</label>
+            <input type="text" class="input-arcel form-control" id="input1" placeholder="type your text here">
+            <small id="emailHelp" class="form-text text-muted">Where your text should be typed</small>
+          </div>
+          <div><input type="text" class="input-arcel"></div>
+          <div><input type="text" class="input-arcel"></div>
+          <div><input type="text" class="input-arcel"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.input-arcel').crossInput({divWrap: true});
+    });
+  </script>
+</body>
+</html>
